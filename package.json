@@ -1,0 +1,44 @@
+{
+	"name": "apartment_rental_server",
+	"version": "1.0.0",
+	"description": "This app is created for toptal test project purpose. ",
+	"main": "index.js",
+	"scripts": {
+		"test": "set NODE_ENV=test&&set PORT=7000&&mocha \"./tests/**/*.js\" --recursive --exit",
+		"start": "set NODE_ENV=default&&nodemon server",
+		"coverage": "set NODE_ENV=test&&set PORT=7000&&nyc --reporter=text npm test"
+	},
+	"author": "superstorm",
+	"license": "ISC",
+	"dependencies": {
+		"@sendgrid/mail": "^7.2.4",
+		"accesscontrol": "^2.2.1",
+		"bcryptjs": "^2.4.3",
+		"body-parser": "^1.19.0",
+		"chai": "^4.2.0",
+		"chai-as-promised": "^7.1.1",
+		"cookie-parser": "^1.4.5",
+		"cross-env": "^7.0.2",
+		"dotenv": "^8.2.0",
+		"express": "^4.17.1",
+		"express-validator": "^6.6.1",
+		"jsonwebtoken": "^8.5.1",
+		"mockery": "^2.1.0",
+		"moment": "^2.27.0",
+		"moment-timezone": "^0.5.31",
+		"mongoose": "^5.9.28",
+		"mongoose-aggregate-paginate-v2": "^1.0.42",
+		"mongoose-auto-increment": "^5.0.1",
+		"mongoose-sequence": "^5.2.2",
+		"nodemailer": "^6.4.11",
+		"nodemailer-mock": "^1.5.3",
+		"randomstring": "^1.1.5",
+		"rewire": "^5.0.0",
+		"sinon": "^9.0.3",
+		"sinon-chai": "^3.5.0",
+		"supertest": "^4.0.2"
+	},
+	"devDependencies": {
+		"nyc": "^15.1.0"
+	}
+}
